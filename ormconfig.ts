@@ -12,7 +12,7 @@ const databaseConfig: ConnectionOptions = {
   type: "postgres",
   synchronize: false,
   logging: true,
-  ...prodConfig,
+  //...prodConfig,
   //...(process.env.NODE_ENV === 'production')? prodConfig: {},
   entities: [`${__dirname}/**/*.entity{.ts,.js}`],
   migrations: [`${__dirname}/**/migration/*.ts`],

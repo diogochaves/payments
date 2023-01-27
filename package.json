@@ -25,7 +25,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "test:e2e:watch": "jest --config ./test/jest-e2e.json --watch",
     "test:e2e:cov": "jest --config ./test/jest-e2e.json --coverage",
-    "keys:generate": "node -r tsconfig-paths/register -r ts-node/register scripts/generate-keys.ts",
+    "keys:generate": "node -r tsconfig-paths/register -r ts-node/register ./src/scripts/generate-keys.ts",
     "typeorm:cli": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli -f ./ormconfig.ts",
     "m:generate": "npm run typeorm:cli -- migration:generate -n",
     "m:run": "npm run typeorm:cli -- migration:run",
